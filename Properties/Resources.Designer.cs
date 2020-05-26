@@ -63,16 +63,6 @@ namespace ATM.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _12__23_ {
-            get {
-                object obj = ResourceManager.GetObject("12_(23)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_card_inserting_309029 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_card_inserting_309029", resourceCulture);

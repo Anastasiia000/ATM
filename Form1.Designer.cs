@@ -60,28 +60,53 @@
             this.btnChekID = new System.Windows.Forms.Button();
             this.panelCashPayment = new System.Windows.Forms.Panel();
             this.txtCash = new System.Windows.Forms.TextBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.btnPayment = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.labelCash = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelChangePIN = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtChangePIN = new System.Windows.Forms.TextBox();
-            this.labelStaryPIN = new System.Windows.Forms.Label();
-            this.labelNowyPIN = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.labelNowyPIN = new System.Windows.Forms.Label();
+            this.txtChangePIN = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.labelStaryPIN = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panelDostepneSrodki = new System.Windows.Forms.Panel();
+            this.txtDostepneSrodki = new System.Windows.Forms.TextBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.btnPrintReceit = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panelCashWithdrawal = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.btnfifty = new System.Windows.Forms.Button();
+            this.btnthreeHundred = new System.Windows.Forms.Button();
+            this.btnhundred = new System.Windows.Forms.Button();
+            this.btnfiveHundred = new System.Windows.Forms.Button();
+            this.btnTwoHundred = new System.Windows.Forms.Button();
+            this.btnEnother = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panelEntrywithdrawal = new System.Windows.Forms.Panel();
+            this.txtEntrywithdrawal = new System.Windows.Forms.TextBox();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panelEkran.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTypeOfTransaction.SuspendLayout();
             this.panelCashPayment.SuspendLayout();
             this.panelChangePIN.SuspendLayout();
+            this.panelDostepneSrodki.SuspendLayout();
+            this.panelCashWithdrawal.SuspendLayout();
+            this.panelEntrywithdrawal.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelEkran
@@ -289,7 +314,7 @@
             this.buttonCansel.TabIndex = 12;
             this.buttonCansel.Text = "CANCEL";
             this.buttonCansel.UseVisualStyleBackColor = false;
-            this.buttonCansel.Click += new System.EventHandler(this.buttonCansel_Click);
+            this.buttonCansel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonEnter
             // 
@@ -317,7 +342,7 @@
             this.panelTypeOfTransaction.Controls.Add(this.label3);
             this.panelTypeOfTransaction.Controls.Add(this.label4);
             this.panelTypeOfTransaction.ForeColor = System.Drawing.Color.Black;
-            this.panelTypeOfTransaction.Location = new System.Drawing.Point(16, 380);
+            this.panelTypeOfTransaction.Location = new System.Drawing.Point(16, 35);
             this.panelTypeOfTransaction.Name = "panelTypeOfTransaction";
             this.panelTypeOfTransaction.Size = new System.Drawing.Size(556, 340);
             this.panelTypeOfTransaction.TabIndex = 16;
@@ -326,7 +351,8 @@
             // btnDoladowanie
             // 
             this.btnDoladowanie.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.btnDoladowanie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnDoladowanie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(108)))), ((int)(((byte)(119)))));
+            this.btnDoladowanie.Enabled = false;
             this.btnDoladowanie.FlatAppearance.BorderSize = 0;
             this.btnDoladowanie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDoladowanie.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -336,11 +362,13 @@
             this.btnDoladowanie.TabIndex = 3;
             this.btnDoladowanie.Text = "Doladowanie telefonu";
             this.btnDoladowanie.UseVisualStyleBackColor = false;
+            this.btnDoladowanie.Click += new System.EventHandler(this.btnDoladowanie_Click);
             // 
             // btnAktywacja
             // 
             this.btnAktywacja.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.btnAktywacja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnAktywacja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(108)))), ((int)(((byte)(119)))));
+            this.btnAktywacja.Enabled = false;
             this.btnAktywacja.FlatAppearance.BorderSize = 0;
             this.btnAktywacja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAktywacja.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,6 +378,7 @@
             this.btnAktywacja.TabIndex = 3;
             this.btnAktywacja.Text = "Aktywacja karty";
             this.btnAktywacja.UseVisualStyleBackColor = false;
+            this.btnAktywacja.Click += new System.EventHandler(this.btnAktywacja_Click);
             // 
             // btnPIN
             // 
@@ -469,7 +498,7 @@
             this.panelCashPayment.Controls.Add(this.labelCash);
             this.panelCashPayment.Controls.Add(this.label6);
             this.panelCashPayment.Controls.Add(this.label2);
-            this.panelCashPayment.Location = new System.Drawing.Point(867, 34);
+            this.panelCashPayment.Location = new System.Drawing.Point(16, 36);
             this.panelCashPayment.Name = "panelCashPayment";
             this.panelCashPayment.Size = new System.Drawing.Size(556, 340);
             this.panelCashPayment.TabIndex = 18;
@@ -486,6 +515,21 @@
             this.txtCash.TabIndex = 4;
             this.txtCash.Text = "0,00";
             this.txtCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // button11
+            // 
+            this.button11.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(368, 283);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(189, 49);
+            this.button11.TabIndex = 3;
+            this.button11.Text = "Zakończ";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
             // button10
             // 
@@ -525,15 +569,15 @@
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 2;
             // 
-            // label2
+            // labelCash
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(13, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 34);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Wpłata gotówki";
+            this.labelCash.AutoSize = true;
+            this.labelCash.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.labelCash.Location = new System.Drawing.Point(235, 121);
+            this.labelCash.Name = "labelCash";
+            this.labelCash.Size = new System.Drawing.Size(72, 34);
+            this.labelCash.TabIndex = 0;
+            this.labelCash.Text = "0,00";
             // 
             // label6
             // 
@@ -545,126 +589,32 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Suma wpłaty: ";
             // 
-            // labelCash
+            // label2
             // 
-            this.labelCash.AutoSize = true;
-            this.labelCash.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
-            this.labelCash.Location = new System.Drawing.Point(235, 121);
-            this.labelCash.Name = "labelCash";
-            this.labelCash.Size = new System.Drawing.Size(72, 34);
-            this.labelCash.TabIndex = 0;
-            this.labelCash.Text = "0,00";
-            // 
-            // button11
-            // 
-            this.button11.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(368, 283);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(189, 49);
-            this.button11.TabIndex = 3;
-            this.button11.Text = "Zakończ";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.btnAnuluj_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(13, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(232, 34);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Wpłata gotówki";
             // 
             // panelChangePIN
             // 
             this.panelChangePIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.panelChangePIN.Controls.Add(this.button14);
+            this.panelChangePIN.Controls.Add(this.button12);
             this.panelChangePIN.Controls.Add(this.labelNowyPIN);
             this.panelChangePIN.Controls.Add(this.txtChangePIN);
             this.panelChangePIN.Controls.Add(this.label5);
             this.panelChangePIN.Controls.Add(this.labelStaryPIN);
             this.panelChangePIN.Controls.Add(this.label7);
             this.panelChangePIN.ForeColor = System.Drawing.Color.Black;
-            this.panelChangePIN.Location = new System.Drawing.Point(637, 34);
+            this.panelChangePIN.Location = new System.Drawing.Point(16, 34);
             this.panelChangePIN.Name = "panelChangePIN";
             this.panelChangePIN.Size = new System.Drawing.Size(556, 340);
             this.panelChangePIN.TabIndex = 16;
             this.panelChangePIN.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 20);
-            this.label5.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(13, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(189, 34);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Zmiana PIN";
-            // 
-            // txtChangePIN
-            // 
-            this.txtChangePIN.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txtChangePIN.Font = new System.Drawing.Font("Modern No. 20", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangePIN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.txtChangePIN.Location = new System.Drawing.Point(150, 165);
-            this.txtChangePIN.MaxLength = 4;
-            this.txtChangePIN.Name = "txtChangePIN";
-            this.txtChangePIN.PasswordChar = '*';
-            this.txtChangePIN.Size = new System.Drawing.Size(249, 59);
-            this.txtChangePIN.TabIndex = 4;
-            this.txtChangePIN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCustomerID_KeyPress);
-            // 
-            // labelStaryPIN
-            // 
-            this.labelStaryPIN.AutoSize = true;
-            this.labelStaryPIN.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
-            this.labelStaryPIN.Location = new System.Drawing.Point(129, 117);
-            this.labelStaryPIN.Name = "labelStaryPIN";
-            this.labelStaryPIN.Size = new System.Drawing.Size(310, 34);
-            this.labelStaryPIN.TabIndex = 0;
-            this.labelStaryPIN.Text = "Wprowadź stary PIN";
-            // 
-            // labelNowyPIN
-            // 
-            this.labelNowyPIN.AutoSize = true;
-            this.labelNowyPIN.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
-            this.labelNowyPIN.Location = new System.Drawing.Point(136, 117);
-            this.labelNowyPIN.Name = "labelNowyPIN";
-            this.labelNowyPIN.Size = new System.Drawing.Size(312, 34);
-            this.labelNowyPIN.TabIndex = 5;
-            this.labelNowyPIN.Text = "Wprowadź nowy PIN";
-            this.labelNowyPIN.Visible = false;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(937, 534);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(168, 89);
-            this.button13.TabIndex = 20;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(79, 602);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 20);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "label8";
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.Red;
-            this.button12.Location = new System.Drawing.Point(799, 554);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(141, 48);
-            this.button12.TabIndex = 23;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = false;
             // 
             // button14
             // 
@@ -679,20 +629,405 @@
             this.button14.TabIndex = 6;
             this.button14.Text = "Powrót do menu";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // button12
+            // 
+            this.button12.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(367, 283);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(189, 49);
+            this.button12.TabIndex = 3;
+            this.button12.Text = "Zakończ";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.btnAnuluj_Click);
+            // 
+            // labelNowyPIN
+            // 
+            this.labelNowyPIN.AutoSize = true;
+            this.labelNowyPIN.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.labelNowyPIN.Location = new System.Drawing.Point(136, 117);
+            this.labelNowyPIN.Name = "labelNowyPIN";
+            this.labelNowyPIN.Size = new System.Drawing.Size(312, 34);
+            this.labelNowyPIN.TabIndex = 5;
+            this.labelNowyPIN.Text = "Wprowadź nowy PIN";
+            this.labelNowyPIN.Visible = false;
+            // 
+            // txtChangePIN
+            // 
+            this.txtChangePIN.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtChangePIN.Font = new System.Drawing.Font("Modern No. 20", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChangePIN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.txtChangePIN.Location = new System.Drawing.Point(150, 165);
+            this.txtChangePIN.MaxLength = 4;
+            this.txtChangePIN.Name = "txtChangePIN";
+            this.txtChangePIN.PasswordChar = '*';
+            this.txtChangePIN.Size = new System.Drawing.Size(249, 59);
+            this.txtChangePIN.TabIndex = 4;
+            this.txtChangePIN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCustomerID_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 20);
+            this.label5.TabIndex = 2;
+            // 
+            // labelStaryPIN
+            // 
+            this.labelStaryPIN.AutoSize = true;
+            this.labelStaryPIN.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.labelStaryPIN.Location = new System.Drawing.Point(129, 117);
+            this.labelStaryPIN.Name = "labelStaryPIN";
+            this.labelStaryPIN.Size = new System.Drawing.Size(310, 34);
+            this.labelStaryPIN.TabIndex = 0;
+            this.labelStaryPIN.Text = "Wprowadź stary PIN";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(13, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(189, 34);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Zmiana PIN";
+            // 
+            // panelDostepneSrodki
+            // 
+            this.panelDostepneSrodki.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.panelDostepneSrodki.Controls.Add(this.txtDostepneSrodki);
+            this.panelDostepneSrodki.Controls.Add(this.button20);
+            this.panelDostepneSrodki.Controls.Add(this.btnPrintReceit);
+            this.panelDostepneSrodki.Controls.Add(this.button21);
+            this.panelDostepneSrodki.Controls.Add(this.label10);
+            this.panelDostepneSrodki.Controls.Add(this.label13);
+            this.panelDostepneSrodki.Location = new System.Drawing.Point(16, 36);
+            this.panelDostepneSrodki.Name = "panelDostepneSrodki";
+            this.panelDostepneSrodki.Size = new System.Drawing.Size(556, 340);
+            this.panelDostepneSrodki.TabIndex = 18;
+            this.panelDostepneSrodki.Visible = false;
+            // 
+            // txtDostepneSrodki
+            // 
+            this.txtDostepneSrodki.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.txtDostepneSrodki.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDostepneSrodki.Location = new System.Drawing.Point(167, 144);
+            this.txtDostepneSrodki.MaxLength = 4;
+            this.txtDostepneSrodki.Name = "txtDostepneSrodki";
+            this.txtDostepneSrodki.Size = new System.Drawing.Size(223, 42);
+            this.txtDostepneSrodki.TabIndex = 4;
+            this.txtDostepneSrodki.Text = "0,00";
+            this.txtDostepneSrodki.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button20
+            // 
+            this.button20.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.button20.FlatAppearance.BorderSize = 0;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.Location = new System.Drawing.Point(368, 283);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(189, 49);
+            this.button20.TabIndex = 3;
+            this.button20.Text = "Zakończ";
+            this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.btnAnuluj_Click);
+            // 
+            // btnPrintReceit
+            // 
+            this.btnPrintReceit.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.btnPrintReceit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnPrintReceit.FlatAppearance.BorderSize = 0;
+            this.btnPrintReceit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrintReceit.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintReceit.Location = new System.Drawing.Point(157, 207);
+            this.btnPrintReceit.Name = "btnPrintReceit";
+            this.btnPrintReceit.Size = new System.Drawing.Size(247, 49);
+            this.btnPrintReceit.TabIndex = 3;
+            this.btnPrintReceit.Text = "Wydrować paragon";
+            this.btnPrintReceit.UseVisualStyleBackColor = false;
+            this.btnPrintReceit.Click += new System.EventHandler(this.btnPrintReceit_Click);
+            // 
+            // button21
+            // 
+            this.button21.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Location = new System.Drawing.Point(0, 283);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(189, 49);
+            this.button21.TabIndex = 3;
+            this.button21.Text = "Powrót do menu";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 44);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 20);
+            this.label10.TabIndex = 2;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(13, 17);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(243, 34);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Dostępne środki";
+            // 
+            // panelCashWithdrawal
+            // 
+            this.panelCashWithdrawal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.panelCashWithdrawal.Controls.Add(this.button13);
+            this.panelCashWithdrawal.Controls.Add(this.button15);
+            this.panelCashWithdrawal.Controls.Add(this.btnfifty);
+            this.panelCashWithdrawal.Controls.Add(this.btnthreeHundred);
+            this.panelCashWithdrawal.Controls.Add(this.btnhundred);
+            this.panelCashWithdrawal.Controls.Add(this.btnfiveHundred);
+            this.panelCashWithdrawal.Controls.Add(this.btnTwoHundred);
+            this.panelCashWithdrawal.Controls.Add(this.btnEnother);
+            this.panelCashWithdrawal.Controls.Add(this.label8);
+            this.panelCashWithdrawal.Controls.Add(this.label12);
+            this.panelCashWithdrawal.Location = new System.Drawing.Point(16, 36);
+            this.panelCashWithdrawal.Name = "panelCashWithdrawal";
+            this.panelCashWithdrawal.Size = new System.Drawing.Size(556, 340);
+            this.panelCashWithdrawal.TabIndex = 18;
+            this.panelCashWithdrawal.Visible = false;
+            // 
+            // button13
+            // 
+            this.button13.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Location = new System.Drawing.Point(368, 283);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(189, 49);
+            this.button13.TabIndex = 3;
+            this.button13.Text = "Zakończ";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.btnAnuluj_Click);
+            // 
+            // button15
+            // 
+            this.button15.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Location = new System.Drawing.Point(0, 283);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(189, 49);
+            this.button15.TabIndex = 3;
+            this.button15.Text = "Powrót do menu";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // btnfifty
+            // 
+            this.btnfifty.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.btnfifty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnfifty.FlatAppearance.BorderSize = 0;
+            this.btnfifty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnfifty.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfifty.Location = new System.Drawing.Point(1, 108);
+            this.btnfifty.Name = "btnfifty";
+            this.btnfifty.Size = new System.Drawing.Size(247, 49);
+            this.btnfifty.TabIndex = 3;
+            this.btnfifty.Text = "50";
+            this.btnfifty.UseVisualStyleBackColor = false;
+            this.btnfifty.Click += new System.EventHandler(this.btnfifty_Click);
+            // 
+            // btnthreeHundred
+            // 
+            this.btnthreeHundred.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.btnthreeHundred.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnthreeHundred.FlatAppearance.BorderSize = 0;
+            this.btnthreeHundred.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnthreeHundred.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthreeHundred.Location = new System.Drawing.Point(310, 108);
+            this.btnthreeHundred.Name = "btnthreeHundred";
+            this.btnthreeHundred.Size = new System.Drawing.Size(247, 49);
+            this.btnthreeHundred.TabIndex = 3;
+            this.btnthreeHundred.Text = "300";
+            this.btnthreeHundred.UseVisualStyleBackColor = false;
+            this.btnthreeHundred.Click += new System.EventHandler(this.btnthreeHundred_Click);
+            // 
+            // btnhundred
+            // 
+            this.btnhundred.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.btnhundred.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnhundred.FlatAppearance.BorderSize = 0;
+            this.btnhundred.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhundred.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhundred.Location = new System.Drawing.Point(0, 162);
+            this.btnhundred.Name = "btnhundred";
+            this.btnhundred.Size = new System.Drawing.Size(247, 49);
+            this.btnhundred.TabIndex = 3;
+            this.btnhundred.Text = "100";
+            this.btnhundred.UseVisualStyleBackColor = false;
+            this.btnhundred.Click += new System.EventHandler(this.btnhundred_Click);
+            // 
+            // btnfiveHundred
+            // 
+            this.btnfiveHundred.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.btnfiveHundred.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnfiveHundred.FlatAppearance.BorderSize = 0;
+            this.btnfiveHundred.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnfiveHundred.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfiveHundred.Location = new System.Drawing.Point(309, 162);
+            this.btnfiveHundred.Name = "btnfiveHundred";
+            this.btnfiveHundred.Size = new System.Drawing.Size(247, 49);
+            this.btnfiveHundred.TabIndex = 3;
+            this.btnfiveHundred.Text = "500";
+            this.btnfiveHundred.UseVisualStyleBackColor = false;
+            this.btnfiveHundred.Click += new System.EventHandler(this.btnfiveHundred_Click);
+            // 
+            // btnTwoHundred
+            // 
+            this.btnTwoHundred.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.btnTwoHundred.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnTwoHundred.FlatAppearance.BorderSize = 0;
+            this.btnTwoHundred.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTwoHundred.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTwoHundred.Location = new System.Drawing.Point(0, 217);
+            this.btnTwoHundred.Name = "btnTwoHundred";
+            this.btnTwoHundred.Size = new System.Drawing.Size(247, 49);
+            this.btnTwoHundred.TabIndex = 3;
+            this.btnTwoHundred.Text = "200";
+            this.btnTwoHundred.UseVisualStyleBackColor = false;
+            this.btnTwoHundred.Click += new System.EventHandler(this.btnTwoHundred_Click);
+            // 
+            // btnEnother
+            // 
+            this.btnEnother.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.btnEnother.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(194)))), ((int)(((byte)(212)))));
+            this.btnEnother.FlatAppearance.BorderSize = 0;
+            this.btnEnother.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnother.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnother.Location = new System.Drawing.Point(309, 217);
+            this.btnEnother.Name = "btnEnother";
+            this.btnEnother.Size = new System.Drawing.Size(247, 49);
+            this.btnEnother.TabIndex = 3;
+            this.btnEnother.Text = "Inna kwota";
+            this.btnEnother.UseVisualStyleBackColor = false;
+            this.btnEnother.Click += new System.EventHandler(this.btnEnother_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 44);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 20);
+            this.label8.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(13, 17);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(432, 34);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Proszę wybierz kwotę wypłaty";
+            // 
+            // panelEntrywithdrawal
+            // 
+            this.panelEntrywithdrawal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.panelEntrywithdrawal.Controls.Add(this.txtEntrywithdrawal);
+            this.panelEntrywithdrawal.Controls.Add(this.button16);
+            this.panelEntrywithdrawal.Controls.Add(this.button17);
+            this.panelEntrywithdrawal.Controls.Add(this.label9);
+            this.panelEntrywithdrawal.Controls.Add(this.label11);
+            this.panelEntrywithdrawal.Location = new System.Drawing.Point(19, 36);
+            this.panelEntrywithdrawal.Name = "panelEntrywithdrawal";
+            this.panelEntrywithdrawal.Size = new System.Drawing.Size(556, 340);
+            this.panelEntrywithdrawal.TabIndex = 18;
+            this.panelEntrywithdrawal.Visible = false;
+            // 
+            // txtEntrywithdrawal
+            // 
+            this.txtEntrywithdrawal.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.txtEntrywithdrawal.Location = new System.Drawing.Point(151, 143);
+            this.txtEntrywithdrawal.Name = "txtEntrywithdrawal";
+            this.txtEntrywithdrawal.Size = new System.Drawing.Size(215, 42);
+            this.txtEntrywithdrawal.TabIndex = 4;
+            // 
+            // button16
+            // 
+            this.button16.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Location = new System.Drawing.Point(368, 283);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(189, 49);
+            this.button16.TabIndex = 3;
+            this.button16.Text = "Zakończ";
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.btnAnuluj_Click);
+            // 
+            // button17
+            // 
+            this.button17.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Location = new System.Drawing.Point(0, 283);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(189, 49);
+            this.button17.TabIndex = 3;
+            this.button17.Text = "Powrót do menu";
+            this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 44);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 20);
+            this.label9.TabIndex = 2;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(13, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(402, 34);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Proszę wpisz kwotę wypłaty";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(1360, 730);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
+            this.ClientSize = new System.Drawing.Size(785, 626);
             this.Controls.Add(this.panelTypeOfTransaction);
+            this.Controls.Add(this.panelEntrywithdrawal);
+            this.Controls.Add(this.panelCashWithdrawal);
             this.Controls.Add(this.panelCashPayment);
-            this.Controls.Add(this.panelChangePIN);
+            this.Controls.Add(this.panelDostepneSrodki);
             this.Controls.Add(this.buttonClear);
+            this.Controls.Add(this.panelChangePIN);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnChekID);
             this.Controls.Add(this.button0);
@@ -711,6 +1046,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ATM";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelEkran.ResumeLayout(false);
@@ -722,8 +1058,13 @@
             this.panelCashPayment.PerformLayout();
             this.panelChangePIN.ResumeLayout(false);
             this.panelChangePIN.PerformLayout();
+            this.panelDostepneSrodki.ResumeLayout(false);
+            this.panelDostepneSrodki.PerformLayout();
+            this.panelCashWithdrawal.ResumeLayout(false);
+            this.panelCashWithdrawal.PerformLayout();
+            this.panelEntrywithdrawal.ResumeLayout(false);
+            this.panelEntrywithdrawal.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -773,10 +1114,32 @@
         private System.Windows.Forms.Label labelNowyPIN;
         private System.Windows.Forms.TextBox txtChangePIN;
         private System.Windows.Forms.Label labelStaryPIN;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Panel panelDostepneSrodki;
+        private System.Windows.Forms.TextBox txtDostepneSrodki;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnPrintReceit;
+        private System.Windows.Forms.Panel panelCashWithdrawal;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btnfifty;
+        private System.Windows.Forms.Button btnthreeHundred;
+        private System.Windows.Forms.Button btnhundred;
+        private System.Windows.Forms.Button btnfiveHundred;
+        private System.Windows.Forms.Button btnTwoHundred;
+        private System.Windows.Forms.Button btnEnother;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panelEntrywithdrawal;
+        private System.Windows.Forms.TextBox txtEntrywithdrawal;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
     }
 }
 

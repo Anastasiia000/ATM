@@ -24,7 +24,7 @@ namespace ATM
             InitializeComponent();
             labelPIN.Visible = false;
             txtPIN.Visible = false;
-            txtCustomerID.Text = "11111111116";
+            //txtCustomerID.Text = "11111111116";
             //txtPIN.Text = "0000";
             panelChangePIN.Visible = false;
             panelCashPayment.Visible = false;
